@@ -1,0 +1,51 @@
+<div style="color: #CCCCCC">
+
+
+    <div>
+        <h2> Demo Component </h2>
+    </div>
+
+
+    <!-- property binding -->
+    <button [disabled]="isUnchanged"> click me </button>
+
+    <!-- interpolation {{}}-->
+    <!-- luam din typescript si punem in html-->
+    <div>{{students | json}}</div>
+
+    <div style="height: 20px;">
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let student of students">{{student.name}}, {{student.age}}, {{student.job}}, {{student.hobby}}
+            </li>
+            <!-- echivalent cu  "for(student : students)"-->
+        </ul>
+    </div>
+
+    <!-- HTML table -->
+    <div>
+        <table id = "data-table" class="table table-hover table-bordered" >
+            <thead>
+                <tr>
+                    <td> Name </td>
+                    <td> Age </td>
+                    <td> Job </td>
+                    <td> Hobby </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let student of students">
+
+                    <td>{{student.name}}</td>
+                    <td>{{student.age}}</td>
+                    <td>{{student.job}}</td>
+                    <td>{{student.hobby}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

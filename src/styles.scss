@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+    background-color: #303030;
+}
+
+div{
+    color: #CCCCCC;
+}
+
+h2{
+     text-align: left;
+     color: #CCCCCC;
+     font-family: Raleway;
+}

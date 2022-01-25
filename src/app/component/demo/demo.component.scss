@@ -1,0 +1,18 @@
+#data-table{
+    width: min-content;
+    color: white;
+   
+}
+
+.table-bordered{
+    border:1px;
+}
+
+.table-hover{
+    --bs-table-hover-color: #FF911A;
+    --bs-table-hover-bg: #7c5c3a;
+  
+}
+
+button:hover{background-color: #FF911A;}
+button:focus{background-color: orangered;}

@@ -1,0 +1,56 @@
+<h2>Test Component</h2>
+
+
+<div style="display: flex">
+
+    <!-- div unordered list -->
+    <div style="width: 40%">
+        <b>Unordered List</b>
+        <ul>
+            <li *ngFor="let employee of employees">
+                {{employee.name}}, {{employee.age}}, {{employee.job}},
+                {{employee.phone}}, {{employee.address}}, {{employee.department}}
+            </li>
+        </ul>
+    </div>
+
+    <!-- div line -->
+    <hr
+        style="width: 1px; height: auto; display: inline-block; position: relative; right:10px; background-color: #FF911A;">
+
+    <!-- div ordered list -->
+    <div style="width: 40%">
+        <b>Ordered List</b>
+        <ol>
+            <li *ngFor="let employee of employees">
+                {{employee.name}}, {{employee.age}}, {{employee.job}},
+                {{employee.phone}}, {{employee.address}}, {{employee.department}}
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div style= "position: relative; left:10px">
+    <table id="employees-table" class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Job</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">Department</th>
+            </tr>
+
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.name}}</td>
+                <td>{{employee.age}}</td>
+                <td>{{employee.job}}</td>
+                <td>{{employee.phone}}</td>
+                <td>{{employee.address}}</td>
+                <td>{{employee.department}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,12 @@
+div{padding: 10px;}
+
+.table-hover{
+    --bs-table-hover-color: #FF911A;
+    --bs-table-hover-bg: rgba(141, 112, 69, 0.075);
+    --bs-table-bg: #424040;
+}
+
+#employees-table{
+    max-width:1%;
+    white-space:nowrap;
+}
